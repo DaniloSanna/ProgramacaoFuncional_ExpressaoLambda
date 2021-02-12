@@ -25,4 +25,7 @@ public class Produto_Exemplo4 {
 		return "Produto [name: " + name + ", preco: " + String.format("%.2f", preco) + "]";
 	}
 
+	public static String staticUpperCaseName(Produto_Exemplo4 t) {
+		return t.getName().toUpperCase();
+	}
 }

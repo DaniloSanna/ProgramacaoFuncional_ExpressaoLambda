@@ -32,7 +32,10 @@ public class Program_Exemplo4 {
 		 * Usando list.collect(Collectors.toList())
 		 * 
 		 */
-		List<String> names = list.stream().map(new Produto_Function()).collect(Collectors.toList());
+		//List<String> names = list.stream().map(new Produto_Function()).collect(Collectors.toList());
+		
+		//Function - Métodos estático
+		List<String> names = list.stream().map(Produto_Exemplo4::staticUpperCaseName).collect(Collectors.toList());
 		
 		
 		System.out.println();
