@@ -37,9 +37,13 @@ public class Program_Exemplo2 {
 		
 		
 		//Expressão Lambda Declarada
-		Predicate<Produto_Exemplo2> pred = p-> p.getPreco()>=100;
-		list.removeIf(pred);
+		//Predicate<Produto_Exemplo2> pred = p-> p.getPreco()>=100;
+		//list.removeIf(pred);
+
 		
+		//Expressão Lambda inLine
+		list.removeIf(p-> p.getPreco()>=100);
+
 		System.out.println();
 		System.out.println("Lista após remoção");
 		for(Produto_Exemplo2 p : list) {
