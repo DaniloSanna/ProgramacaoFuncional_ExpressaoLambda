@@ -2,9 +2,9 @@ package applications;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 import entities.Produto_Exemplo3;
-import util.ProdutoConsumer_Exemplo3;
 
 public class Program_Exemplo3 {
 	
@@ -29,7 +29,12 @@ public class Program_Exemplo3 {
 		//list.forEach( Produto_Exemplo3::staticaumentaPreco);
 		
 		//Implementação Método non estático
-		list.forEach( Produto_Exemplo3::nonStaticaumentaPreco);
+		//list.forEach( Produto_Exemplo3::nonStaticaumentaPreco);
+		
+		//Implementação Expressão lambda Declarada
+		Consumer<Produto_Exemplo3> cons = p-> p.setPreco(p.getPreco() * 1.1);
+		list.forEach(cons);
+
 		
 		System.out.println();
 		System.out.println("Lista Após aumento");
