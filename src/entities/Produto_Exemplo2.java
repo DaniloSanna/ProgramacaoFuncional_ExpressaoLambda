@@ -23,4 +23,8 @@ public class Produto_Exemplo2 {
 	public String toString() {
 		return "Produto [name: " + name + ", preco: " + preco + "]";
 	}
+	
+	public static boolean staticProductPredicate(Produto_Exemplo2 p) {
+		return p.getPreco() >= 100.0;
+	}
 }

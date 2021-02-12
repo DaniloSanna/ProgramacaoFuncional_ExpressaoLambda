@@ -26,7 +26,11 @@ public class Program_Exemplo2 {
 		
 		//Implementação do predicado atravez da interface;
 		//predicado (p -> p.getPreco() >=100);
-		list.removeIf( new ProductoPredicate_exemplo2() );
+		//list.removeIf( new ProductoPredicate_exemplo2() );
+		
+		//Referência a método estático
+		list.removeIf( Produto_Exemplo2::staticProductPredicate);
+		
 		
 		
 		System.out.println();
