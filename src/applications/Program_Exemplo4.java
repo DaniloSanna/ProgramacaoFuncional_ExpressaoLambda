@@ -41,9 +41,13 @@ public class Program_Exemplo4 {
 		//List<String> names = list.stream().map(Produto_Exemplo4::nonStaticUpperCaseName).collect(Collectors.toList());
 				
 		//Function - Lambda Declarado
-		Function<Produto_Exemplo4, String> func = p -> p.getName().toUpperCase();
-		List<String> names = list.stream().map(func).collect(Collectors.toList());
+		//Function<Produto_Exemplo4, String> func = p -> p.getName().toUpperCase();
+		//List<String> names = list.stream().map(func).collect(Collectors.toList());
 				
+		//Function - Lambda InLine
+		List<String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
+
+		
 		
 		System.out.println();
 		System.out.println("Nova Lista de Nomes");
