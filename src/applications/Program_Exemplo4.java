@@ -2,10 +2,10 @@ package applications;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import entities.Produto_Exemplo4;
-import util.Produto_Function;
 
 public class Program_Exemplo4 {
 	
@@ -38,7 +38,11 @@ public class Program_Exemplo4 {
 		//List<String> names = list.stream().map(Produto_Exemplo4::staticUpperCaseName).collect(Collectors.toList());
 		
 		//Function - Métodos non estático
-		List<String> names = list.stream().map(Produto_Exemplo4::nonStaticUpperCaseName).collect(Collectors.toList());
+		//List<String> names = list.stream().map(Produto_Exemplo4::nonStaticUpperCaseName).collect(Collectors.toList());
+				
+		//Function - Lambda Declarado
+		Function<Produto_Exemplo4, String> func = p -> p.getName().toUpperCase();
+		List<String> names = list.stream().map(func).collect(Collectors.toList());
 				
 		
 		System.out.println();
