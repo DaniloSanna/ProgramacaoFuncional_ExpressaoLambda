@@ -32,9 +32,13 @@ public class Program_Exemplo3 {
 		//list.forEach( Produto_Exemplo3::nonStaticaumentaPreco);
 		
 		//Implementação Expressão lambda Declarada
-		Consumer<Produto_Exemplo3> cons = p-> p.setPreco(p.getPreco() * 1.1);
-		list.forEach(cons);
+		//Consumer<Produto_Exemplo3> cons = p-> p.setPreco(p.getPreco() * 1.1);
+		//list.forEach(cons);
 
+		//Implementação Expressão lambda Inline
+		list.forEach(p->p.setPreco(p.getPreco() * 1.1));
+		
+		
 		
 		System.out.println();
 		System.out.println("Lista Após aumento");
