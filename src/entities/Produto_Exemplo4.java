@@ -28,4 +28,8 @@ public class Produto_Exemplo4 {
 	public static String staticUpperCaseName(Produto_Exemplo4 t) {
 		return t.getName().toUpperCase();
 	}
+	
+	public String nonStaticUpperCaseName() {
+		return name.toUpperCase();
+	}
 }

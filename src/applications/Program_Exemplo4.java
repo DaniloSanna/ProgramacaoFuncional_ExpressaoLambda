@@ -35,8 +35,11 @@ public class Program_Exemplo4 {
 		//List<String> names = list.stream().map(new Produto_Function()).collect(Collectors.toList());
 		
 		//Function - Métodos estático
-		List<String> names = list.stream().map(Produto_Exemplo4::staticUpperCaseName).collect(Collectors.toList());
+		//List<String> names = list.stream().map(Produto_Exemplo4::staticUpperCaseName).collect(Collectors.toList());
 		
+		//Function - Métodos non estático
+		List<String> names = list.stream().map(Produto_Exemplo4::nonStaticUpperCaseName).collect(Collectors.toList());
+				
 		
 		System.out.println();
 		System.out.println("Nova Lista de Nomes");
