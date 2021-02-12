@@ -27,4 +27,8 @@ public class Produto_Exemplo2 {
 	public static boolean staticProductPredicate(Produto_Exemplo2 p) {
 		return p.getPreco() >= 100.0;
 	}
+	
+	public boolean nonStaticProductPredicate() {
+		return preco >= 100.0;
+	}
 }

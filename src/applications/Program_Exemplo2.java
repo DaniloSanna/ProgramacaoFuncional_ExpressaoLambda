@@ -29,8 +29,11 @@ public class Program_Exemplo2 {
 		//list.removeIf( new ProductoPredicate_exemplo2() );
 		
 		//Referência a método estático
-		list.removeIf( Produto_Exemplo2::staticProductPredicate);
+		//list.removeIf( Produto_Exemplo2::staticProductPredicate);
 		
+		
+		//Referência a método não estático
+		list.removeIf( Produto_Exemplo2::nonStaticProductPredicate);
 		
 		
 		System.out.println();
