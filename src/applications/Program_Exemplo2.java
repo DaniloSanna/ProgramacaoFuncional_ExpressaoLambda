@@ -2,9 +2,9 @@ package applications;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 import entities.Produto_Exemplo2;
-import util.ProductoPredicate_exemplo2;
 
 public class Program_Exemplo2 {
 	
@@ -33,8 +33,12 @@ public class Program_Exemplo2 {
 		
 		
 		//Referência a método não estático
-		list.removeIf( Produto_Exemplo2::nonStaticProductPredicate);
+		//list.removeIf( Produto_Exemplo2::nonStaticProductPredicate);
 		
+		
+		//Expressão Lambda Declarada
+		Predicate<Produto_Exemplo2> pred = p-> p.getPreco()>=100;
+		list.removeIf(pred);
 		
 		System.out.println();
 		System.out.println("Lista após remoção");
