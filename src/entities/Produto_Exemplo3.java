@@ -28,5 +28,9 @@ public class Produto_Exemplo3 {
 	public static void staticaumentaPreco(Produto_Exemplo3 t) {
 		t.setPreco(t.getPreco() * 1.1);
 	}
+	
+	public void nonStaticaumentaPreco() {
+		setPreco(getPreco() * 1.1);
+	}
 
 }

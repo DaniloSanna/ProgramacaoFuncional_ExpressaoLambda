@@ -26,9 +26,10 @@ public class Program_Exemplo3 {
 		//list.forEach( new ProdutoConsumer_Exemplo3() );		
 		
 		//Implementação Método estático
-		list.forEach( Produto_Exemplo3::staticaumentaPreco);
+		//list.forEach( Produto_Exemplo3::staticaumentaPreco);
 		
-		
+		//Implementação Método non estático
+		list.forEach( Produto_Exemplo3::nonStaticaumentaPreco);
 		
 		System.out.println();
 		System.out.println("Lista Após aumento");
