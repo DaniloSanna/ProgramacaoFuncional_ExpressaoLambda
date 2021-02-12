@@ -3,6 +3,7 @@ package entities;
 public class Produto_Exemplo3 {
 	private String name;
 	private Double preco;
+	
 	public String getName() {
 		return name;
 	}
@@ -22,6 +23,10 @@ public class Produto_Exemplo3 {
 	@Override
 	public String toString() {
 		return "Produto [name: " + name + ", preco: " + String.format("%.2f", preco) + "]";
+	}
+	
+	public static void staticaumentaPreco(Produto_Exemplo3 t) {
+		t.setPreco(t.getPreco() * 1.1);
 	}
 
 }

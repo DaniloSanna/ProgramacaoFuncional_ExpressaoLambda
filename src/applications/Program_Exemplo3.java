@@ -22,7 +22,13 @@ public class Program_Exemplo3 {
 			System.out.println(p);
 		}
 		
-		list.forEach( new ProdutoConsumer_Exemplo3() );		
+		//Implementação da Interface
+		//list.forEach( new ProdutoConsumer_Exemplo3() );		
+		
+		//Implementação Método estático
+		list.forEach( Produto_Exemplo3::staticaumentaPreco);
+		
+		
 		
 		System.out.println();
 		System.out.println("Lista Após aumento");
