@@ -46,8 +46,6 @@ public class Program_Exemplo4 {
 				
 		//Function - Lambda InLine
 		List<String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
-
-		
 		
 		System.out.println();
 		System.out.println("Nova Lista de Nomes");
