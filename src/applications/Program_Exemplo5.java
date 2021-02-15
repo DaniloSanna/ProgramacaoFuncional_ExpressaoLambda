@@ -24,10 +24,13 @@ public class Program_Exemplo5 {
 
 		
 		ProductService_Exemplo5 ps = new ProductService_Exemplo5();
-		double sum = ps.filteredSum(list, p-> p.getName().charAt(0)=='T');
+		double sum1 = ps.filteredSum(list, p-> p.getName().charAt(0)=='T');
+		double sum2 = ps.filteredSum(list, p-> p.getPreco()<=100.00);
+		
 		System.out.println();
-		System.out.println("Soma: " + String.format("%.2f", sum));
-	
+		System.out.println("Soma: " + String.format("%.2f", sum1));
+		System.out.println("Soma: " + String.format("%.2f", sum2));
+		
 	
 	
 	
